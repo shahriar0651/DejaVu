@@ -1,0 +1,31 @@
+name: mmfjdt
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8.20
+  - pip
+  - pip:
+      # Core dependencies from requirements.txt
+      - numpy==1.23.3
+      - llvmlite
+      - numba==0.48.0
+      - torch>=1.1
+      - tensorboardX
+      - easydict
+      - pyyaml
+      - scikit-image
+      - tqdm
+      - torchvision
+      - SharedArray==3.0.0
+      - opencv-python
+      - pyquaternion
+      - spconv-cu113
+      - av2
+      - kornia==0.6.9
+      # Note: torch-scatter may need special installation for CUDA compatibility
+      # If standard installation fails, run: pip install torch-scatter -f https://data.pyg.org/whl/torch-1.10.1+cu113.html
+      - torch_scatter
+      - shapely==1.8.4
+      # Additional dependencies from installation instructions
+      - nuscenes-devkit==1.0.5
+      - open3d

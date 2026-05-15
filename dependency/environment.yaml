@@ -1,0 +1,10 @@
+name: openmmlab
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - hydra-core
+  - numpy
+  - pandas
+  - seaborn
+  - pip:
